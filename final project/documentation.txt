@@ -1,0 +1,65 @@
+ROCK, PAPER, SCISSORS GAME
+
+The application I created using C# language is a simple ROCK, PAPER, SCISSORS game. The 
+game aims to simulate a two-player game where a user competes against a 
+computer. 
+Upon starting the game, the user will be prompted to choose between rock, paper, or scissors.
+The computer makes its choice randomly using a built-in random number generator.  Each round is 
+evaluated based on traditional game rules, and a message is displayed indicating the winner of 
+the round along with the current scores.The first player to reach the 3 points will be the winner. 
+After a player has reached the 3 points, the game announces the winner, and asks the user 
+whether they want to play another match or not. 
+
+The rules of the game are:
+- ROCK beats SCISSORS
+- SCISSORS beats PAPER
+- PAPER beats ROCK
+
+Sample Test Data
+Below are examples of input/output interactions used to test the program.
+
+- Test Case 1: Normal game flow with valid inputs
+Input:
+ROCK
+PAPER
+SCISSORS
+
+Output:
+Computer chose PAPER
+CPU WINS!!
+SCORES: PLAYER: 0 CPU: 1
+
+Computer chose ROCK
+PLAYER WINS!!
+SCORES: PLAYER: 1 CPU: 1
+
+- Test Case 2: Invalid input handling
+Input:
+hello
+
+Output:
+Invalid input! Please enter ROCK, PAPER, or SCISSORS.
+
+- Test Case 3: Case-insensitivity check
+Input: 
+rock
+Rock
+ROCK
+
+Output:
+Program accepts all inputs as valid since it converts to uppercase before processing.
+
+- Test Case 4: Game ends and restarts
+Input:
+Game ends with player score reaching 3
+User enters y when asked if they want to play again
+
+Output:
+Player WON!
+Do you want to play again? (y/n)
+If, y another match will start.
+if, n program ends with no errors.
+If, random input: Invalid input, please enter 'y' or 'n'.
+
+
+
